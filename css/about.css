@@ -1,24 +1,31 @@
+:root {
+    --font-default: "Betania Patmos In GDL", cursive;
+    --font-principal-title: "Gravitas One", serif;
+    --color-primary: groove #333333;
+    
+  }
+
 body{
-    color: #333333;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: var(--color-primary);
+    font-family: var(--font-default);
     margin-left: auto;
     margin-right: auto;
     width: 940px;
 }
 
 h1{
+    font-family: var(--font-principal-title);
     background-image: url(../img/sobre-background.jpg);
     padding: 10px;
 }
 
 h2{
+    font-family: var(--font-principal-title);
     border-bottom: 2px groove #333333;
     margin-top: 30px;
 }
 
 figure{
-    background-color: #F2EDED;
-    border: 1px solid #ccc;
     text-align: center;
     padding: 15px;
     margin: 30px;
