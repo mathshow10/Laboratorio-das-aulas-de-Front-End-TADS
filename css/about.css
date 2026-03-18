@@ -16,6 +16,7 @@ body{
 h1{
     font-family: var(--font-principal-title);
     background-image: url(../img/sobre-background.jpg);
+    text-align: center;
     padding: 10px;
 }
 
@@ -26,9 +27,11 @@ h2{
 }
 
 figure{
+    border-radius: 2px;
     text-align: center;
     padding: 15px;
     margin: 30px;
+    box-shadow: 0 0 0 1px #a39b9b;
 }
 
 figcaption{
