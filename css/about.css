@@ -13,25 +13,30 @@ body{
     width: 940px;
 }
 
+
+
 h1{
     font-family: var(--font-principal-title);
     background-image: url(../img/sobre-background.jpg);
     text-align: center;
-    padding: 10px;
+    margin-top: 20px;
 }
 
 h2{
+    clear: both;
     font-family: var(--font-principal-title);
     border-bottom: 2px groove #333333;
     margin-top: 30px;
 }
 
 figure{
-    border-radius: 2px;
-    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 15px;
-    margin: 30px;
-    box-shadow: 0 0 0 1px #a39b9b;
+    margin: 30px auto;
+    text-align: center;
+    background-color: #f9f9f9;
+    max-width: 600px;
 }
 
 figcaption{
@@ -42,4 +47,45 @@ figcaption{
 p{
     padding: 0 45px;
     text-indent: 15px;
+    text-align: justify;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#centro-distribuicao {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
+#rodape {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+}
+
+#rodape {
+    color: #777;
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
+#rodape img {
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+}
+
+#familia-pelho {
+    float: right;
+    margin: 0 0 10px 15px;
+    max-width: 300px;
 }
