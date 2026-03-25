@@ -2,9 +2,9 @@
     --font-default: "Betania Patmos In GDL", cursive;
     --font-principal-title: "Gravitas One", serif;
     --color-primary: groove #333333;
-    
-  }
+}
 
+/* BODY (mantido) */
 body{
     color: var(--color-primary);
     font-family: var(--font-default);
@@ -13,8 +13,28 @@ body{
     width: 940px;
 }
 
+/* HEADER (novo - não interfere no resto) */
+header {
+    text-align: center;
+}
 
+/* NAV (novo) */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
 
+/* LINKS (mantido) */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* TÍTULOS (mantido) */
 h1{
     font-family: var(--font-principal-title);
     background-image: url(../img/sobre-background.jpg);
@@ -29,6 +49,27 @@ h2{
     margin-top: 30px;
 }
 
+/* LAYOUT PRINCIPAL (novo) */
+main {
+    display: flex;
+    gap: 20px;
+}
+
+/* ARTICLE (novo) */
+article {
+    flex: 3;
+}
+
+/* ASIDE (novo) */
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* FIGURE (mantido) */
 figure{
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -44,38 +85,34 @@ figcaption{
     margin-top: 10px;
 }
 
+/* PARÁGRAFOS (mantido) */
 p{
     padding: 0 45px;
     text-indent: 15px;
     text-align: justify;
 }
 
-a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
+/* CENTRO DISTRIBUIÇÃO (mantido) */
 #centro-distribuicao {
     margin-left: auto;
     margin-right: auto;
     width: 550px;
 }
 
-#rodape {
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    border-top: 1px solid #ccc;
+/* FAMÍLIA FLOAT (mantido) */
+#familia-pelho {
+    float: right;
+    margin: 0 0 10px 15px;
+    max-width: 300px;
 }
 
+/* RODAPÉ (mantido, só unificado) */
 #rodape {
+    text-align: center;
     color: #777;
     margin: 30px 0;
     padding: 30px 0;
+    border-top: 1px solid #ccc;
 }
 
 #rodape img {
@@ -84,8 +121,13 @@ a:hover {
     width: 94px;
 }
 
-#familia-pelho {
-    float: right;
-    margin: 0 0 10px 15px;
-    max-width: 300px;
+aside img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: 0.3s;
 }
+
+aside img:hover {
+    transform: scale(1.03);
+}   
