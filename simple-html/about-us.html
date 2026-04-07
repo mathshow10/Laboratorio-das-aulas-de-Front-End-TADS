@@ -2,184 +2,193 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>Sobre a Empresa</title>
-    <link
-      rel="stylesheet"
-      href="/html-basico/Laboratorio-das-aulas-de-Front-End-TADS/css/about.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Betania+Patmos+In+GDL&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós – Mirror Fashion</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/design-system.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
-
   <body>
-    <header>
-      <img
-        src="/html-basico/Laboratorio-das-aulas-de-Front-End-TADS/Img/logo.png"
-        alt="Logo da empresa"
-      />
-      <h1><strong>A Mirror Fashion</strong></h1>
+
+    <!-- c-header: Cabeçalho fixo com navegação -->
+    <header class="c-header">
+      <div class="container c-header__inner">
+        <a href="index.html">
+          <img class="c-header__logo" src="img/logo.png" alt="Mirror Fashion" />
+        </a>
+        <nav aria-label="Navegação principal">
+          <ul class="c-nav">
+            <li><a class="c-nav__link" href="index.html">Home</a></li>
+            <li><a class="c-nav__link c-nav__link--active" href="about-us.html">Sobre Nós</a></li>
+            <li><a class="c-nav__link" href="about-us.html#diferenciais">Diferenciais</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <nav>
-      <a href="index.html">Home</a> | <a href="#historia">História</a> |
-      <a href="#diferenciais">Diferenciais</a>
-    </nav>
+    <!-- c-hero: Destaque da página -->
+    <section class="c-hero c-hero--compact">
+      <div class="container">
+        <p class="c-hero__eyebrow">Nossa Empresa</p>
+        <h1 class="c-hero__title">A Mirror Fashion</h1>
+        <p class="c-hero__body">
+          Líder global em moda online, presente em 124 países
+          com o melhor preço garantido e frete grátis para o mundo todo.
+        </p>
+      </div>
+    </section>
 
     <main>
-      <article>
-        <p>
-          A <strong>Mirror Fashion</strong> é a maior empresa comércio
-          eletrônico no segmento de moda em todo o mundo. Fundada em
-          <strong>1932</strong>, possui filiais em <strong>124 países</strong>,
-          sendo líder de mercado com mais de
-          <strong>90% de participação</strong> em <strong>118 deles</strong>.
-        </p>
 
-        <p>
-          Nosso centro de distribuição fica em
-          <strong>
-            <a href="https://maps.google.com.br/?q=Jacarezinho" target="_blank">
-              Jacarezinho, no Paraná
-            </a> </strong
-          >. De lá, saem <strong>48 aviões</strong> que distribuem nossos
-          produtos às casas do mundo todo.
-        </p>
+      <!-- Seção introdutória -->
+      <section class="c-section">
+        <div class="container">
+          <div class="c-prose">
+            <p>
+              A <strong>Mirror Fashion</strong> é a maior empresa de comércio
+              eletrônico no segmento de moda em todo o mundo. Fundada em 1932,
+              possui filiais em 124 países, sendo líder de mercado com mais de
+              90% de participação em 118 deles.
+            </p>
+            <p>
+              Nosso centro de distribuição fica em
+              <a
+                target="_blank"
+                title="Google Maps"
+                href="https://maps.google.com.br/?q=Jacarezinho"
+              >Jacarezinho</a>, no Paraná. De lá, saem 48 aviões que distribuem
+              nossos produtos às casas do mundo todo. Nosso centro de distribuição:
+            </p>
+          </div>
 
-        <figure id="centro-distribuicao">
-          <img
-            src="/html-basico/Laboratorio-das-aulas-de-Front-End-TADS/Img/centro-distribuicao.png"
-            alt="Centro de distribuição"
-          />
-          <figcaption>Centro de distribuição da empresa</figcaption>
-        </figure>
-
-        <p>
-          Compre suas roupas e acessórios na <strong>Mirror Fashion</strong>.
-          Acesse nossa
-          <a href="index.html"><strong>loja</strong></a>
-          ou <strong>entre em contato</strong> se tiver dúvidas. Conheça também
-          nossa
-          <a href="#historia"><strong>história</strong></a>
-          e nossos
-          <a href="#diferenciais"><strong>diferenciais</strong></a
-          >.
-        </p>
-
-        <section id="historia">
-          <h2>História</h2>
-
-          <figure id="familia-pelho">
-            <img
-              src="/html-basico/Laboratorio-das-aulas-de-Front-End-TADS/Img/familia-pelho.jpg"
-              alt="Família fundadora"
-            />
-            <figcaption>Família fundadora da empresa</figcaption>
+          <figure class="c-figure" id="centro-distribuicao">
+            <img class="c-figure__img" src="img/centro-distribuicao.png" alt="Centro de distribuição" />
+            <figcaption class="c-figure__caption">Centro de Distribuição – Jacarezinho, PR</figcaption>
           </figure>
 
-          <p>
-            A fundação em <strong>1932</strong> ocorreu no momento da descoberta
-            econômica do interior do Paraná. A <strong>família Pelho</strong>,
-            tradicional da região, investiu todas as suas economias nessa nova
-            iniciativa. O fundador <strong>Eduardo Simões Pelho</strong>, dotado
-            de particular visão administrativa, guiou os negócios da empresa
-            durante mais de <strong>50 anos</strong>, muitos deles ao lado de
-            seu filho <strong>E. S. Pelho Filho</strong>, atual
-            <strong>CEO</strong>.
-          </p>
+          <div class="c-prose">
+            <p>
+              Compre suas roupas e acessórios na Mirror Fashion.
+              <a href="index.html">Acesse nossa loja</a> ou
+              <a href="mailto:loja@loja.com">entre em contato</a> se tiver dúvidas.
+              Conheça também nossa <a href="#historia">história</a> e nossos
+              <a href="#diferenciais">diferenciais</a>.
+            </p>
+          </div>
+        </div>
+      </section>
 
-          <p>
-            O crescimento da empresa foi praticamente instantâneo. Nos primeiros
-            <strong>5 anos</strong>, já atendia <strong>18 países</strong>.
-            Bateu a marca de <strong>100 países</strong> em apenas
-            <strong>15 anos de existência</strong>. Até hoje, já atendeu
-            <strong>740 milhões de usuários</strong>.
-          </p>
+      <!-- c-section--alt: Seção de história -->
+      <section class="c-section c-section--alt" id="historia">
+        <div class="container">
+          <header class="c-section__header">
+            <p class="c-section__eyebrow">Desde 1932</p>
+            <h2 class="c-section__title">História</h2>
+          </header>
 
-          <p>
-            Hoje, é a <strong>maior empregadora do Brasil</strong>. Mesmo após
-            apenas <strong>5 anos de existência</strong>, já possuía
-            <strong>30 mil funcionários</strong>. Fora do Brasil, há
-            <strong>240 mil funcionários</strong>, além dos
-            <strong>890 mil brasileiros</strong> nas instalações de Jacarezinho.
-          </p>
+          <div class="c-article-grid">
+            <figure class="c-figure" id="familia-pelho">
+              <img class="c-figure__img" src="img/familia-pelho.jpg" alt="Família Pelho" />
+              <figcaption class="c-figure__caption">Família Pelho</figcaption>
+            </figure>
 
-          <p>
-            Dada a importância econômica da empresa para o Brasil, a
-            <strong>família Pelho</strong> já recebeu diversos
-            <strong>prêmios, homenagens e condecorações</strong>. Todos os
-            <strong>presidentes do Brasil</strong> já visitaram as instalações
-            da <strong>Mirror Fashion</strong>.
-          </p>
-        </section>
+            <div class="c-prose">
+              <p>
+                A fundação em 1932 ocorreu no momento da descoberta econômica do
+                interior do Paraná. A família Pelho, tradicional da região, investiu
+                todas as suas economias nessa nova iniciativa, revolucionária para a
+                época. O fundador <em>Eduardo Simões Pelho</em>, dotado de particular
+                visão administrativa, guiou os negócios da empresa durante mais de 50
+                anos, muitos deles ao lado de seu filho <em>E. S. Pelho Filho</em>,
+                atual CEO. O nome da empresa é inspirado no nome da família.
+              </p>
+              <p>
+                O crescimento da empresa foi praticamente instantâneo. Nos primeiros 5
+                anos, já atendia 18 países. Bateu a marca de 100 países em apenas 15
+                anos de existência. Até hoje, já atendeu 740 milhões de usuários
+                diferentes, em bilhões de diferentes pedidos.
+              </p>
+              <p>
+                O crescimento em número de funcionários é também assombroso. Hoje, é a
+                maior empregadora do Brasil, mas mesmo após apenas 5 anos de sua
+                existência, já possuía 30 mil funcionários. Fora do Brasil, há 240 mil
+                funcionários, além dos 890 mil brasileiros nas instalações de
+                Jacarezinho e nos escritórios em todo o país.
+              </p>
+              <p>
+                Dada a importância econômica da empresa para o Brasil, a família Pelho
+                já recebeu diversos prêmios, homenagens e condecorações. Todos os
+                presidentes do Brasil já visitaram as instalações da Mirror Fashion,
+                além de presidentes da União Europeia, Ásia e o secretário-geral da ONU.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="diferenciais">
-          <h2>Diferenciais</h2>
+      <!-- Seção de diferenciais -->
+      <section class="c-section" id="diferenciais">
+        <div class="container">
+          <header class="c-section__header">
+            <p class="c-section__eyebrow">Por que escolher a Mirror Fashion?</p>
+            <h2 class="c-section__title">Nossos Diferenciais</h2>
+          </header>
 
-          <ul>
-            <li><strong>Menor preço do varejo, garantido</strong></li>
-            <li>
-              Se você achar uma loja mais barata,
-              <strong>leva o produto de graça</strong>
+          <ul class="c-grid c-grid--3">
+            <li class="c-card">
+              <p class="c-card__icon">🚚</p>
+              <h3 class="c-card__title">Frete grátis para o mundo todo</h3>
+              <p class="c-card__body">Todas as compras com frete grátis, independente do destino.</p>
             </li>
-            <li>Pague em <strong>reais, dólares, euros ou bitcoins</strong></li>
-            <li><strong>Frete grátis para o mundo todo</strong></li>
-            <li><strong>Maior comércio eletrônico de moda do mundo</strong></li>
-            <li>
-              Atendimento via
-              <strong>telefone, email, chat e redes sociais</strong>
+            <li class="c-card">
+              <p class="c-card__icon">💰</p>
+              <h3 class="c-card__title">Menor preço garantido</h3>
+              <p class="c-card__body">Se encontrar mais barato em qualquer loja, você leva o produto de graça.</p>
             </li>
-            <li><strong>Presente em 124 países</strong></li>
-            <li>
-              <strong>Mais de um milhão de funcionários</strong> em todo o mundo
+            <li class="c-card">
+              <p class="c-card__icon">💳</p>
+              <h3 class="c-card__title">Pagamento flexível</h3>
+              <p class="c-card__body">Pague em reais, dólares, euros ou bitcoins.</p>
+            </li>
+            <li class="c-card">
+              <p class="c-card__icon">🌍</p>
+              <h3 class="c-card__title">Presença global</h3>
+              <p class="c-card__body">Presente em 124 países com mais de um milhão de funcionários.</p>
+            </li>
+            <li class="c-card">
+              <p class="c-card__icon">🏆</p>
+              <h3 class="c-card__title">Líder de mercado</h3>
+              <p class="c-card__body">Maior comércio eletrônico de moda do mundo, com 90% de liderança em 118 países.</p>
+            </li>
+            <li class="c-card">
+              <p class="c-card__icon">🎧</p>
+              <h3 class="c-card__title">Atendimento multicanal</h3>
+              <p class="c-card__body">
+                Suporte via <a href="tel:+553536298400">telefone</a>,
+                <a href="mailto:loja@loja.com">e-mail</a>,
+                chat, Twitter, Facebook, carta, fax e telegrama.
+              </p>
             </li>
           </ul>
-        </section>
-      </article>
+        </div>
+      </section>
 
-      <aside>
-        <h3>Parceria oficial</h3>
-
-        <a href="index.html">
-          <img
-            src="/html-basico/Laboratorio-das-aulas-de-Front-End-TADS/Img/produtos/32fde300-a352-11ef-a4fe-a3e9a6c5d640.jpg.webp"
-            alt="Parceria oficial Mirror Fashion"
-          />
-          <img
-            src="/html-basico/Laboratorio-das-aulas-de-Front-End-TADS/Img/produtos/epoca-jogo-tigrinho.avif"
-            alt="Parceria oficial Mirror Fashion"
-          />
-          <img
-            src="/html-basico/Laboratorio-das-aulas-de-Front-End-TADS/Img/produtos/aviator-bet365-demostracao.gif"
-            alt="Parceria oficial Mirror Fashion"
-          />
-        </a>
-
-        <p>Confira nossas ofertas exclusivas!</p>
-      </aside>
     </main>
 
-    <footer class="rodape">
-      <div class="rodape-container">
-        
-        <img
-          src="/html-basico/Laboratorio-das-aulas-de-Front-End-TADS/Img/logo.png"
-          alt="Logo Mirror Fashion"
-          class="rodape-logo"
-        />
-    
-        <p class="rodape-texto">
-          &copy; 2026 <strong>Mirror Fashion</strong> — Todos os direitos reservados.
-        </p>
-    
+    <!-- c-footer: Rodapé (componente de referência do Design System) -->
+    <footer class="c-footer" id="rodape">
+      <div class="container c-footer__inner">
+        <div class="c-footer__brand">          
+          <span class="c-footer__copy">&copy; 2024 Mirror Fashion. Todos os direitos reservados.</span>
+        </div>
+        <ul class="c-footer__links">
+          <li><a class="c-footer__link" href="index.html">Home</a></li>
+          <li><a class="c-footer__link" href="about-us.html">Sobre Nós</a></li>
+          <li><a class="c-footer__link" href="mailto:loja@loja.com">Contato</a></li>
+        </ul>
       </div>
     </footer>
+
   </body>
 </html>
