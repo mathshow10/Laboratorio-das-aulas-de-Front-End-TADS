@@ -1,0 +1,37 @@
+/* Mirror Fashion – Estilos específicos da Home */
+
+/* Layout da seção de prévia "Sobre nós" */
+.c-about-preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.c-about-preview__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.c-about-preview__text .c-section__title {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.c-prose__paragraph {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-muted);
+}
+
+.c-about-preview .c-figure {
+  margin-block: 0;
+}
+
+@media (max-width: 768px) {
+  .c-about-preview {
+    grid-template-columns: 1fr;
+  }
+}

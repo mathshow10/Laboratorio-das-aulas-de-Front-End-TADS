@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mirror Fashion – Moda que reflete quem você é</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/design-system.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- c-header: Cabeçalho fixo com navegação -->
+    <header class="c-header">
+      <div class="container c-header__inner">
+        <a href="index.html">
+          <img class="c-header__logo" src="img/logo.png" alt="Mirror Fashion" />
+        </a>
+        <nav aria-label="Navegação principal">
+          <ul class="c-nav">
+            <li><a class="c-nav__link c-nav__link--active" href="index.html">Home</a></li>
+            <li><a class="c-nav__link" href="about-us.html">Sobre Nós</a></li>
+            <li><a class="c-nav__link" href="about-us.html#diferenciais">Diferenciais</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- c-hero: Destaque principal -->
+      <section class="c-hero">
+        <div class="container">
+          <p class="c-hero__eyebrow">Bem-vindo à Mirror Fashion</p>
+          <h1 class="c-hero__title">Moda que reflete<br />quem você é</h1>
+          <p class="c-hero__body">
+            A maior loja de moda do mundo, presente em 124 países,
+            com preço garantido e frete grátis para qualquer destino.
+          </p>
+          <div class="c-hero__actions">
+            <a href="about-us.html" class="c-btn c-btn--primary">Conheça nossa história</a>
+            <a href="about-us.html#diferenciais" class="c-btn c-btn--outline">Nossos diferenciais</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- c-section--alt: Vantagens em cards -->
+      <section class="c-section c-section--alt">
+        <div class="container">
+          <header class="c-section__header">
+            <p class="c-section__eyebrow">Por que escolher a Mirror Fashion?</p>
+            <h2 class="c-section__title">Vantagens exclusivas para você</h2>
+            <p class="c-section__lead">
+              Desde 1932, somos referência em moda, qualidade e atendimento ao cliente.
+            </p>
+          </header>
+
+          <div class="c-grid c-grid--4">
+            <div class="c-card">
+              <p class="c-card__icon">🚚</p>
+              <h3 class="c-card__title">Frete Grátis</h3>
+              <p class="c-card__body">Entregamos em qualquer lugar do mundo sem custo adicional.</p>
+            </div>
+            <div class="c-card">
+              <p class="c-card__icon">🏷️</p>
+              <h3 class="c-card__title">Menor Preço</h3>
+              <p class="c-card__body">Garantimos o menor preço do varejo ou você leva o produto de graça.</p>
+            </div>
+            <div class="c-card">
+              <p class="c-card__icon">💳</p>
+              <h3 class="c-card__title">Pagamento Fácil</h3>
+              <p class="c-card__body">Pague em reais, dólares, euros ou bitcoins.</p>
+            </div>
+            <div class="c-card">
+              <p class="c-card__icon">🎧</p>
+              <h3 class="c-card__title">Suporte 24h</h3>
+              <p class="c-card__body">Atendimento via telefone, e-mail, chat e redes sociais.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de prévia "Sobre nós" -->
+      <section class="c-section">
+        <div class="container c-about-preview">
+          <div class="c-about-preview__text">
+            <p class="c-section__eyebrow">Nossa Empresa</p>
+            <h2 class="c-section__title">Fundada em 1932</h2>
+            <p class="c-prose__paragraph">
+              A <strong>Mirror Fashion</strong> é a maior empresa de comércio
+              eletrônico no segmento de moda em todo o mundo. Com presença em
+              124 países e mais de um milhão de funcionários, nosso centro de
+              distribuição em Jacarezinho, PR, despacha 48 aviões diariamente
+              para todos os cantos do planeta.
+            </p>
+            <a href="about-us.html" class="c-btn c-btn--primary">Saiba mais sobre nós</a>
+          </div>
+          <figure class="c-figure">
+            <img class="c-figure__img" src="img/centro-distribuicao.png" alt="Centro de distribuição" />
+            <figcaption class="c-figure__caption">Centro de Distribuição – Jacarezinho, PR</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- c-section--brand: Estatísticas de destaque -->
+      <section class="c-section c-section--brand">
+        <div class="container">
+          <div class="c-grid c-grid--4">
+            <div class="c-stat">
+              <span class="c-stat__value">124</span>
+              <span class="c-stat__label">Países atendidos</span>
+            </div>
+            <div class="c-stat">
+              <span class="c-stat__value">740M+</span>
+              <span class="c-stat__label">Usuários únicos</span>
+            </div>
+            <div class="c-stat">
+              <span class="c-stat__value">1M+</span>
+              <span class="c-stat__label">Funcionários</span>
+            </div>
+            <div class="c-stat">
+              <span class="c-stat__value">90%</span>
+              <span class="c-stat__label">Liderança de mercado</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- c-footer: Rodapé (componente de referência do Design System) -->
+    <footer class="c-footer" id="rodape">
+      <div class="container c-footer__inner">
+        <div class="c-footer__brand">          
+          <span class="c-footer__copy">&copy; 2024 Mirror Fashion. Todos os direitos reservados.</span>
+        </div>
+        <ul class="c-footer__links">
+          <li><a class="c-footer__link" href="index.html">Home</a></li>
+          <li><a class="c-footer__link" href="about-us.html">Sobre Nós</a></li>
+          <li><a class="c-footer__link" href="mailto:loja@loja.com">Contato</a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>

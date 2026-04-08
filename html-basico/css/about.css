@@ -1,0 +1,25 @@
+/* Mirror Fashion – Estilos específicos da página Sobre Nós */
+
+/* Layout em duas colunas para a seção de história */
+.c-article-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.c-article-grid .c-figure {
+  margin-block: 0;
+}
+
+/* Largura máxima da figura do centro de distribuição */
+#centro-distribuicao {
+  max-width: 550px;
+  margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+  .c-article-grid {
+    grid-template-columns: 1fr;
+  }
+}
