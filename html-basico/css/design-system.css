@@ -1,12 +1,12 @@
 /* Mirror Fashion – Design System
    Tokens: cores, tipografia, espaçamento, sombras, bordas, transições */
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap');
 
 :root {
   /* ── Tipografia ──────────────────────────── */
-  --font-title:  "Archivo Black", sans-serif;
-  --font-body:   "Roboto", sans-serif;
+  --font-title:  "Playfair Display", serif;
+  --font-body:   "Poppins", sans-serif;
 
   --font-size-xs:   0.75rem;    /* 12 px */
   --font-size-sm:   0.875rem;   /* 14 px */
@@ -21,35 +21,35 @@
   --font-weight-regular: 400;
   --font-weight-medium:  500;
   --font-weight-bold:    700;
-  --font-weight-black:   900;
+  --font-weight-black:   800;
 
   --line-height-tight:  1.15;
   --line-height-snug:   1.35;
   --line-height-normal: 1.6;
   --line-height-loose:  1.8;
 
-  /* ── Paleta de cores ─────────────────────── */
-  --color-brand:        #1a1a2e;   /* navy – cor principal da marca */
+  /* ── Paleta de cores (Premium & Modern) ──── */
+  --color-brand:        #0f3460;   /* Deep blue – cor principal */
   --color-brand-mid:    #16213e;
-  --color-accent:       #e94560;   /* rose – CTA / destaque */
+  --color-accent:       #ea5455;   /* Coral elegante */
   --color-accent-dark:  #c73652;
 
-  --color-text:         #222;
-  --color-text-muted:   #555;
-  --color-text-subtle:  #888;
+  --color-text:         #1a1a1a;
+  --color-text-muted:   #666666;
+  --color-text-subtle:  #999999;
 
   --color-bg:           #ffffff;
-  --color-bg-soft:      #f8f7f5;
-  --color-bg-tint:      #f2eded;
+  --color-bg-soft:      #fafaf9;
+  --color-bg-tint:      #f5f3f0;
 
-  --color-border:       #e0e0e0;
-  --color-border-dark:  #ccc;
+  --color-border:       #e5e5e5;
+  --color-border-dark:  #d4d4d8;
 
   /* Footer */
   --color-base-footer:  #777;      /* alias legado mantido para compatibilidade */
-  --color-footer-bg:    #1a1a2e;
-  --color-footer-text:  #aaa;
-  --color-footer-link:  #ccc;
+  --color-footer-bg:    #0f3460;
+  --color-footer-text:  #b0b0b0;
+  --color-footer-link:  #e0e0e0;
 
   /* ── Escala de espaçamento (base 4 px) ──── */
   --space-1:   4px;
@@ -70,18 +70,18 @@
   --radius-xl:  24px;
   --radius-full: 9999px;
 
-  /* ── Sombras ─────────────────────────────── */
-  --shadow-xs: 0 1px 2px rgba(0, 0, 0, .06);
-  --shadow-sm: 0 1px 4px rgba(0, 0, 0, .08);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, .10);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, .14);
+  /* ── Sombras (Modernizadas) ──────────────── */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, .04);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, .07);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, .10);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, .12);
 
   /* ── Layout ──────────────────────────────── */
   --max-width:     1140px;
   --header-height: 68px;
 
   /* ── Transições ──────────────────────────── */
-  --transition-fast: 150ms ease;
-  --transition-base: 250ms ease;
-  --transition-slow: 400ms ease;
+  --transition-fast: 150ms ease-out;
+  --transition-base: 250ms ease-out;
+  --transition-slow: 400ms ease-out;
 }
