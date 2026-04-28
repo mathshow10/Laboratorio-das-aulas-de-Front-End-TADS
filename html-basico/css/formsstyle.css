@@ -1,0 +1,81 @@
+body {
+    font-family: "Boldonse", system-ui;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: #e3f0f0; /* #3f0f0 mais claro conforme layout */
+    padding: 25px 30px;
+    border-radius: 6px;
+    width: 500px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  .descricao {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .form-group label {
+    width: 140px;
+    font-size: 14px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  .botoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  button {
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+  
+  .limpar {
+    background-color: #ccc;
+  }
+  
+  .enviar {
+    background-color: #35009e;
+    color: white;
+  }
+  
+  .rodape {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+  }
