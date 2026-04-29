@@ -1,0 +1,151 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Container */
+.container {
+  max-width: 540px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 28px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Título */
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 2px;
+}
+
+.subtitulo {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-user {
+  width: 36px;
+  height: 36px;
+}
+
+/* Fieldsets */
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 14px;
+  color: #e08a1e;
+  padding: 0 6px;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+/* Inputs e Selects */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #e08a1e;
+  box-shadow: 0 0 0 2px rgba(224, 138, 30, 0.15);
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+input[type="file"] {
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  margin-top: 4px;
+  color: #555;
+}
+
+/* Botões */
+.botoes {
+  display: flex;
+  gap: 0;
+  margin-top: 18px;
+}
+
+.btn-cancelar,
+.btn-enviar {
+  flex: 1;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-cancelar {
+  background-color: #e08a1e;
+  color: #fff;
+  border-radius: 6px 0 0 6px;
+}
+
+.btn-enviar {
+  background-color: #3333cc;
+  color: #fff;
+  border-radius: 0 6px 6px 0;
+}
+
+.btn-cancelar:hover {
+  opacity: 0.9;
+}
+
+.btn-enviar:hover {
+  opacity: 0.9;
+}
