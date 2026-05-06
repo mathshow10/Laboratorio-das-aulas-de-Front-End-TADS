@@ -1,0 +1,153 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container dos cards */
+.container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+/* Card base */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 40px 30px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hover nos cards normais */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    border-color: #3a7bd5;
+}
+
+/* Card destaque (Elite) */
+.card-featured {
+    border: 2px solid #c8a951;
+    box-shadow: 0 8px 25px rgba(200, 169, 81, 0.2);
+}
+
+.card-featured:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 35px rgba(200, 169, 81, 0.35);
+    border-color: #c8a951;
+}
+
+/* Título do card */
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Preço */
+.card-price {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 2px;
+}
+
+.price-currency {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3a7bd5;
+}
+
+.price-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3a7bd5;
+    line-height: 1;
+}
+
+.price-period {
+    font-size: 0.95rem;
+    color: #888888;
+}
+
+/* Lista de features */
+.card-features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+.card-features li {
+    padding: 8px 0;
+    font-size: 0.95rem;
+    color: #555555;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.2s ease;
+}
+
+.card:hover .card-features li {
+    color: #333333;
+}
+
+.card-features .check {
+    color: #3a7bd5;
+    font-size: 1rem;
+}
+
+/* Botão */
+.card-button {
+    display: inline-block;
+    padding: 10px 24px;
+    border: 2px solid #3a7bd5;
+    border-radius: 5px;
+    color: #3a7bd5;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.card-button:hover {
+    background-color: #3a7bd5;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card-featured {
+        transform: scale(1);
+    }
+
+    .card-featured:hover {
+        transform: translateY(-10px);
+    }
+}
