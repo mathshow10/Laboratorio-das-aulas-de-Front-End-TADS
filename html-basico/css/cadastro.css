@@ -149,3 +149,105 @@ input[type="file"] {
 .btn-enviar:hover {
   opacity: 0.9;
 }
+
+/* ─────────────────────────────────────────────
+   Responsivo – Desktops / Telas grandes (>768px)
+   Layout padrão acima, sem alterações necessárias
+───────────────────────────────────────────── */
+
+/* ─────────────────────────────────────────────
+   Responsivo – Tablets (>480px e <768px)
+───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 22px 20px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  fieldset {
+    padding: 12px 14px;
+  }
+
+  .botoes {
+    margin-top: 14px;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Responsivo – Smartphones (<480px)
+───────────────────────────────────────────── */
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 16px 12px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .subtitulo {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .icon-user {
+    width: 28px;
+    height: 28px;
+  }
+
+  fieldset {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+  }
+
+  legend {
+    font-size: 12px;
+  }
+
+  label {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="password"],
+  input[type="number"],
+  select {
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .btn-cancelar,
+  .btn-enviar {
+    border-radius: 6px;
+    padding: 12px;
+  }
+
+  .btn-cancelar {
+    border-radius: 6px 6px 0 0;
+  }
+
+  .btn-enviar {
+    border-radius: 0 0 6px 6px;
+  }
+}

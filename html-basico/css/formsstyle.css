@@ -79,3 +79,97 @@ body {
     font-size: 12px;
     margin-top: 15px;
   }
+
+  /* ─────────────────────────────────────────────
+     Responsivo – Desktops / Telas grandes (>768px)
+     Layout padrão acima, sem alterações necessárias
+  ───────────────────────────────────────────── */
+
+  /* ─────────────────────────────────────────────
+     Responsivo – Tablets (>480px e <768px)
+  ───────────────────────────────────────────── */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 20px 24px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    .form-group {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .form-group label {
+      width: 100%;
+      margin-bottom: 4px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+    }
+  }
+
+  /* ─────────────────────────────────────────────
+     Responsivo – Smartphones (<480px)
+  ───────────────────────────────────────────── */
+  @media (max-width: 480px) {
+    body {
+      height: auto;
+      padding: 16px 0;
+    }
+
+    .container {
+      width: 95%;
+      padding: 16px 14px;
+      border-radius: 4px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .descricao {
+      font-size: 12px;
+      margin-bottom: 14px;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .form-group label {
+      font-size: 12px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 6px;
+      font-size: 13px;
+    }
+
+    textarea {
+      height: 60px;
+    }
+
+    .botoes {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .rodape {
+      font-size: 11px;
+    }
+  }
