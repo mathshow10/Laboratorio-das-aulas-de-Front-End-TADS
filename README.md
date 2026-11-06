@@ -1,29 +1,32 @@
-# 🚀 Laboratório de Programação Front-End (TADS)
+# Laboratório de Programação Front-End (TADS)
 
-Repositório dedicado ao armazenamento das práticas, exercícios e laboratórios desenvolvidos durante a disciplina de **Programação Front-End** do curso de Tecnologia em Análise e Desenvolvimento de Sistemas (TADS).
+Exercícios e laboratórios da disciplina de **Programação Front-End** do curso de Análise e Desenvolvimento de Sistemas (FEPI).
 
----
+O projeto central é a **Mirror Fashion**, uma loja fictícia que foi evoluindo aula a aula: da estrutura em HTML ao layout responsivo com um design system próprio.
 
-## 📂 Estrutura do Repositório
+## O que tem aqui
 
-O projeto está organizado da seguinte forma:
+| Pasta / arquivo | O que é |
+|---|---|
+| `html-basico/index.html` | Home da Mirror Fashion |
+| `html-basico/about-us.html` | Página "Sobre nós" |
+| `html-basico/cadastro.html`, `forms.html` | Formulários (inputs, validação e layout com CSS Grid) |
+| `html-basico/Cards/` | Cards de planos de preços com hover e transições |
+| `html-basico/css/` | `reset`, `design-system` (variáveis), `components` (padrão BEM) e estilos por página |
+| `Img/` | Imagens usadas nos laboratórios |
 
-* **`html-basico/`** — Introdução aos conceitos fundamentais de estruturação de páginas web com HTML[cite: 1].
-* **`Img/`** — Recursos visuais, ícones e imagens utilizados nas páginas dos laboratórios[cite: 1].
-* **`lab05/`** — Práticas focadas em estilização avançada, layout e design responsivo (breakpoints para smartphones, tablets e desktops)[cite: 1].
+## O que foi praticado
 
----
+- HTML5 semântico (`header`, `main`, `nav`, `section`) e acessibilidade básica
+- CSS3: Flexbox, Grid, variáveis CSS e media queries (smartphone, tablet e desktop)
+- Componentização de CSS com nomes no padrão BEM (`c-header__inner`, `c-hero__title`)
+- Formulários e layout de cadastro
+- Git e GitHub no dia a dia
 
-## 🛠️ Tecnologias Utilizadas
+## Como ver
 
-As seguintes tecnologias e ferramentas são empregadas ao longo das aulas e laboratórios:
+Não precisa instalar nada. Baixe o repositório e abra `html-basico/index.html` no navegador.
 
-* **HTML5** — Estruturação de conteúdo web.
-* **CSS3** — Estilização, Flexbox, Grid e Design Responsivo (Media Queries).
-* **Git & GitHub** — Controle de versão e versionamento de código.
+## Autor
 
----
-
-## 👨‍💻 Autor
-
-Desenvolvido por **Matheus Lencione**[cite: 1].
+**Matheus Lencione** · [GitHub](https://github.com/mathshow10)
